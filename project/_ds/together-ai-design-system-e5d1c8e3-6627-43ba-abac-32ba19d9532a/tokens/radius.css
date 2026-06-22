@@ -1,0 +1,20 @@
+/* ──────────────────────────────────────────────────────────────
+   RADIUS & ELEVATION
+   The brand elevates with hairlines + surface contrast, NOT shadow.
+   The single soft drop-shadow is reserved for the floating orb.
+   4px is the canonical card/button radius. full only for the orb.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  /* Border radius scale */
+  --radius-none: 0px;     /* full-bleed bands, wordmark banner       */
+  --radius-xs:   3.25px;  /* pricing sub-tab + outline button        */
+  --radius-sm:   4px;     /* CANONICAL — buttons, cards, badges, rows */
+  --radius-md:   8px;     /* feature-tab pills, larger pricing tabs   */
+  --radius-full: 9999px;  /* ONLY the floating chat-launcher orb      */
+
+  /* Elevation */
+  --elev-0: none;                                   /* flat — most cards    */
+  --elev-1: none;                                   /* hairline border only  */
+  --shadow-orb: rgba(1, 1, 32, 0.10) 0px 4px 10px 0px; /* the one soft drop */
+  --border-width-hairline: 1px;
+}

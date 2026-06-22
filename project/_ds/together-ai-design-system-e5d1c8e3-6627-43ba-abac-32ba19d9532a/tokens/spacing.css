@@ -1,0 +1,31 @@
+/* ──────────────────────────────────────────────────────────────
+   SPACING — base unit 4px. Almost every value is a 4-multiple.
+   Two derived exceptions: 7.2 / 55.2 are gap-multiplier values.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  --space-xxs:     2px;
+  --space-xs:      4px;
+  --space-sm:      8px;
+  --space-md:      12px;
+  --space-lg:      16px;
+  --space-xl:      20px;
+  --space-2xl:     24px;
+  --space-3xl:     32px;
+  --space-4xl:     44px;
+  --space-5xl:     48px;
+  --space-6xl:     55.2px;
+  --space-section: 80px;   /* marketing band top/bottom rhythm */
+
+  /* Layout */
+  --container-max: 1280px;
+  --gutter-desktop: var(--space-3xl); /* 32px */
+  --gutter-mobile:  var(--space-lg);  /* 16px */
+
+  /* Semantic spacing aliases */
+  --pad-card:        var(--space-2xl); /* research / testimonial / article */
+  --pad-stat-card:   var(--space-3xl); /* big-number breathing room        */
+  --gap-inline:      var(--space-md);  /* button + nav rows                 */
+  --gap-chip:        var(--space-sm);  /* chip groups                       */
+  --gap-headline:    var(--space-lg);  /* headline → lead paragraph         */
+  --pad-table-cell:  var(--space-md) var(--space-lg);
+}

@@ -1,0 +1,47 @@
+/* ──────────────────────────────────────────────────────────────
+   FONTS
+   Together AI ships two PROPRIETARY faces:
+     • "The Future"            — custom geometric display sans (headlines + body)
+     • "PP Neue Montreal Mono" — uppercase mono caption face (eyebrows + labels)
+   Neither is licensed for redistribution. We substitute the documented
+   open-source matches and alias them to the brand family names so every
+   token below keeps reading `The Future` / `PP Neue Montreal Mono`.
+
+     Display sans → Inter        (400 / 500, ss01 on, tightened tracking)
+     Mono caps    → JetBrains Mono(500, uppercased, +tracking)
+
+   ⚠️  SUBSTITUTION — swap these @import + @font-face blocks for the real
+       web-font binaries when licensed files are available.
+   ────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+/* Alias the substitutes to the brand family names ------------------ */
+@font-face {
+  font-family: 'The Future';
+  src: local('Inter');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'The Future';
+  src: local('Inter Medium'), local('Inter-Medium');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Neue Montreal Mono';
+  src: local('JetBrains Mono');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PP Neue Montreal Mono';
+  src: local('JetBrains Mono Medium'), local('JetBrainsMono-Medium');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
